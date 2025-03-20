@@ -26,6 +26,9 @@ switch (explode('?',$_SERVER['REQUEST_URI'])[0]) {
     case config()->prefixe.'/logout/':
         require 'controllers/logout.php';
         break;
+    case config()->prefixe.'/contact/':
+            require 'controllers/contact.php';
+            break;
     default:
     header('HTTP/1.0 404 Not Found');
     require 'views/404.php';

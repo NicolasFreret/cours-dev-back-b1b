@@ -50,7 +50,7 @@
 				<a href="#">Blog</a>
 				<a href="#">Nos points de vente</a>
 				<a href="#">FAQ</a>
-				<a href="#">Nous contacter</a>
+				<a class="<?php echo $page == "contact" ? 'active' : '' ?>" href="<?php echo config()->home_url  ?>/contact/">Nous contacter</a>
 				<?php echo $logout ?>
 			</nav>
 			
