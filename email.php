@@ -15,14 +15,16 @@ $message = '
   <p>'.$_POST['msg'].'</p>
 ';
 
+//https://reallygoodemails.com/emails/your-mydisney-account-has-been-updated/live
 $m = file_get_contents('t.html');
 
-$m = str_replace($_POST['fname'],"{nom}",$m);
+$p = str_replace(['{prenom}', '{nom}'],[$_POST['fname'], $_POST['lname']], $m);
+
 
 mail(
-    'tonemail@gmail.com',
+    $_POST['email'],
     'Message du site',
-    $m,
+    $p,
     $headers
 );
 
