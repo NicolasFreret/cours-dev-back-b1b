@@ -1,0 +1,11 @@
+{
+    "site_name":"Super site",
+    "prefixe":"/r",
+    "home_url":"http://127.0.0.1/r",
+    "bdd":{
+        "hote":"localhost",
+        "name":"mabdd",
+        "user":"root",
+        "pass":""
+    }
+}
